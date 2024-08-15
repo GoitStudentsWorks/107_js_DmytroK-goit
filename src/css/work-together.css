@@ -1,5 +1,4 @@
 .work-together button {
-  border-radius: 50%;
   background-color: #ed3b44;
 }
 
@@ -27,12 +26,30 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #fafafa;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .work-together-span {
+    color: #ed3b44;
   }
   .work-together-header-cont {
     display: flex;
   }
   .work-together-header-cont img {
     margin-right: 8px;
+    max-width: 44px;
+    max-height: 44px;
+  }
+  .work-together-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .work-together-form input {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid yellow;
   }
 }
 
@@ -47,6 +64,11 @@
     margin: 0 auto;
     display: block;
     justify-content: center;
+  }
+  .work-together-header-cont img {
+    margin-right: 8px;
+    max-width: 44px;
+    max-height: 44px;
   }
   .work-together h2 {
     font-size: 40px;
@@ -63,6 +85,17 @@
   }
   .work-together-header-cont img {
     margin-right: 8px;
+  }
+  .work-together-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .work-together-form input {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid yellow;
   }
 }
 
