@@ -56,6 +56,16 @@
   font-weight: bold;
 }
 
+.hero_social_media:hover,
+.hero_social_media:focus{
+    background-color: rgba(248, 127, 127, 0.216);
+}
+
+.hero_email:hover,
+.hero_email:focus{
+    background-color: rgba(248, 127, 127, 0.216);;
+}
+
 .hero_email {
   display: inline-flex;
   padding: 0px 16px;
