@@ -1,40 +1,184 @@
-.accordion {
-  margin-top: 164px;
+/* from Accordion/dist/accordion.css*/
+/**
+ * Accordion v3.3.4
+ * Lightweight and accessible accordion module created in pure Javascript
+ * https://github.com/michu2k/Accordion
+ *
+ * Copyright (c) Michał Strumpf
+ * Published under MIT License
+ */
+
+.faq-section {
+  margin-top: 64px;
 }
 
 .faq-title {
   margin-bottom: 32px;
-}
 
-.accordion-question {
-  color: #fafafa;
-
-  /* Desktop_tablet/H5 */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 150% */
-  letter-spacing: -0.4px;
-
-  padding-bottom: 26px;
-}
-
-.accordion-content {
-  color: rgba(250, 250, 250, 0.6);
-
-  /* Desktop_tablet/Main text */
+  color: rgba(250, 250, 250, 0.4);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.32px;
+}
 
-  margin-bottom: 26px;
+.ac {
+  border: 1px solid #eee;
+  box-sizing: border-box;
+
+  border-right: none;
+  border-left: none;
 }
 
 .accordion-question {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.accordion-btn {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #fafafa;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  /* background-color: transparent; */
+
   cursor: pointer;
+}
+
+.ac-header {
+  color: #fafafa;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+
+  padding-top: 20px;
+  padding-bottom: 16px;
+  flex-grow: 1;
+  padding-right: 40px;
+}
+
+.ac .ac-trigger {
+  text-align: left;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+}
+
+.ac .ac-trigger::after {
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+
+  color: rgba(250, 250, 250, 0.6);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: '–';
+}
+
+.ac.is-active .accordion-btn {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* -----------------------------  FOR TABLET ----------------------------- */
+
+@media screen and (min-width: 768px) {
+  .faq-section {
+    margin-top: 96px;
+  }
+
+  .ac-header {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .ac .ac-panel {
+    padding-right: 32px;
+    padding-bottom: 26px;
+  }
+}
+
+/* -----------------------------  FOR COMPUTER ----------------------------- */
+@media screen and (min-width: 1440px) {
+  .faq-section {
+    margin-top: 164px;
+  }
+
+  .accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ac {
+    flex: 0 0 50%;
+  }
+
+  .ac-header {
+    padding-top: 32px;
+    padding-bottom: 26px;
+  }
+
+  .ac:nth-child(odd) {
+    border-right: 1px solid #eee;
+  }
+
+  .ac:nth-child(even) {
+    padding-left: 16px;
+  }
+
+  .ac:nth-child(odd) .accordion-btn {
+    right: 32px;
+  }
+
+  .ac .ac-panel {
+    padding-right: 32px;
+    padding-bottom: 26px;
+  }
 }
