@@ -36,13 +36,13 @@ if (commentsForm) {
       .then(response => {
         console.log('Форма успішно відправлена:', response.data);
         commentsForm.reset(); 
-        alert('Форма успішно відправлена та очищена!');
+        showModal();
       })
       .catch(error => {
         console.error('Виникла помилка:', error);
         alert('Виникла помилка при відправці форми.');
       })
-    showModal();
+    
   })
 }
 
