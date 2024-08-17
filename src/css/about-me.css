@@ -111,11 +111,15 @@
   }
 }
 
-.about-wrapper {
+/* ----- Accordion container ----- */
+
+.about-ac.ac {
   display: flex;
   flex-direction: column;
+  border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   padding-bottom: 20px;
+  background-color: transparent;
 }
 
 .about-wrap {
@@ -139,7 +143,7 @@
   text-align: left;
 }
 
-.about-btn {
+.about-ac-btn {
   border-radius: 50px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   width: 36px;
@@ -148,20 +152,20 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-btn {
+  .about-ac-btn {
     width: 40px;
     height: 40px;
   }
 }
 
-.about-text-wrap {
+.about-ac-panel {
   display: inline-flex;
   flex-direction: column;
   gap: 32px;
 }
 
 @media screen and (min-width: 1440px) {
-  .about-text-wrap {
+  .about-ac-panel {
     padding-right: 68px;
     padding-left: 696px;
     justify-content: flex-start;
@@ -193,15 +197,11 @@
   display: inline-flex;
   flex-direction: column;
   gap: 10px;
-  /* display: none; */
 }
 
 @media screen and (min-width: 1440px) {
   .about-role-list {
-    padding-left: 696px;
-    padding-right: 396px;
     justify-content: flex-start;
-    width: 284px;
   }
 }
 
@@ -234,7 +234,6 @@
   display: inline-flex;
   flex-direction: column;
   gap: 10px;
-  /* display: none; */
 }
 
 @media screen and (min-width: 1440px) {
@@ -243,18 +242,39 @@
   }
 
   .about-education-list {
-    padding-left: 696px;
-    padding-right: 215px;
     justify-content: flex-start;
-    width: 464px;
   }
 }
+
+.ac.is-active .about-ac-btn {
+  transform: rotate(180deg);
+}
+
+.ac.is-active .about-btn-icon {
+  transform: translate(-3%, 10%);
+}
+
+.about-btn-icon {
+  stroke: #fafafa;
+  fill: transparent;
+  transform: translateY(10%);
+}
+
+@media screen and (min-width: 768px) {
+  .about-btn-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ----- Swiper ----- */
 
 .about-skills {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 55px;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -293,7 +313,7 @@
   height: 130px;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  flex-shrink: 0;
+  flex-shrink: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,9 +333,4 @@
 .about-skills-item-accent {
   border: none;
   background-color: #ed3b44;
-}
-
-.about-skills-btn {
-  width: 40px;
-  height: 40px;
 }
