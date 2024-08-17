@@ -24,7 +24,7 @@
   display: flex;
   width: 100%;
   transform: rotate(16deg);
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .covers-marquee__inner {
@@ -32,20 +32,26 @@
   gap: 24px;
   animation: marqueeScroll 65s linear infinite;
   gap: 48px;
+  animation-play-state: paused;
 }
 
 .covers-marquee__item {
   flex-shrink: 0;
   width: 282px;
   height: 162px;
+  overflow: hidden;
 }
 
 .covers-marquee__item img {
-  width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: fill;
+}
+
+.covers-marquee__inner {
+  animation-play-state: paused;
 }
 
 @keyframes marqueeScroll {
@@ -54,5 +60,15 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-content {
+    height: 960px;
+  }
+  .covers-marquee__item {
+    width: 544px;
+    height: 314px;
   }
 }
