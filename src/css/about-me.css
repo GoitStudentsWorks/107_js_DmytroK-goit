@@ -113,6 +113,10 @@
 
 /* ----- Accordion container ----- */
 
+.about-accordion-container {
+  margin-bottom: 32px;
+}
+
 .about-ac.ac {
   display: flex;
   flex-direction: column;
@@ -269,23 +273,29 @@
 
 /* ----- Swiper ----- */
 
-.about-skills {
+.about-skills.swiper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 55px;
   margin: 0;
+  background: none;
+  width: 343px;
+  height: 130px;
 }
 
 @media screen and (min-width: 768px) {
-  .about-skills {
+  .about-skills.swiper {
     gap: 64px;
+    width: 600px;
+    height: 200px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .about-skills {
+  .about-skills.swiper {
     gap: 72px;
+    width: 1200px;
   }
 }
 
@@ -313,7 +323,7 @@
   height: 130px;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  flex-shrink: 1;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,4 +343,39 @@
 .about-skills-item-accent {
   border: none;
   background-color: #ed3b44;
+}
+
+.about-swiper-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  background: none;
+  border: none;
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-swiper-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about-skills-btn-icon {
+  stroke: #3b3b3b;
+  fill: transparent;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-skills-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.swiper-button-next::after {
+  content: '';
 }
