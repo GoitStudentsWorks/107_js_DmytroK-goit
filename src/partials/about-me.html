@@ -42,68 +42,99 @@
     </picture>
   </div>
 
-  <div class="about-wrapper">
-    <div class="about-wrap">
-      <h3 class="about-subtitle">About me</h3>
-      <button class="about-btn" type="button"></button>
+  <!-- Accordion container -->
+  <div class="about-accordion-container">
+    <div class="about-ac ac">
+      <div class="about-wrap">
+        <h3 class="about-subtitle">About me</h3>
+        <button class="about-ac-btn" type="button">
+          <svg class="about-btn-icon" width="18" height="18">
+            <use href="./img/about-img/about-icons.svg#icon-down"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="about-ac-panel ac-panel">
+        <p class="about-text">
+          I am Lloyd Jefferson, a talented programmer with extensive expertise
+          in software development. I have an understanding of different
+          programming languages and technologies, always ready to improve my
+          skills. I always follow the latest trends and look for unconventional,
+          creative solutions to problems. I have a high level of analytical
+          skills and am able to effectively solve even the most difficult tasks
+          encountered on the way.
+        </p>
+        <p class="about-text">
+          Able to work both independently and in a team. I can effectively
+          cooperate with colleagues, exchanging ideas and finding optimal
+          solutions. Professional maturity allows you to calmly cope with
+          challenges and stressful situations, while maintaining a high quality
+          of work.I am always looking for opportunities for self-improvement. I
+          actively study new technologies and practices to stay abreast of the
+          latest innovations. I have a strong understanding of various
+          programming languages, frameworks and architectural concepts that
+          allow me to create efficient and scalable software.
+        </p>
+      </div>
     </div>
-    <div class="about-text-wrap">
-      <p class="about-text">
-        I am Lloyd Jefferson, a talented programmer with extensive expertise in
-        software development. I have an understanding of different programming
-        languages and technologies, always ready to improve my skills. I always
-        follow the latest trends and look for unconventional, creative solutions
-        to problems. I have a high level of analytical skills and am able to
-        effectively solve even the most difficult tasks encountered on the way.
-      </p>
-      <p class="about-text">
-        Able to work both independently and in a team. I can effectively
-        cooperate with colleagues, exchanging ideas and finding optimal
-        solutions. Professional maturity allows you to calmly cope with
-        challenges and stressful situations, while maintaining a high quality of
-        work.I am always looking for opportunities for self-improvement. I
-        actively study new technologies and practices to stay abreast of the
-        latest innovations. I have a strong understanding of various programming
-        languages, frameworks and architectural concepts that allow me to create
-        efficient and scalable software.
-      </p>
+    <div class="about-ac ac">
+      <div class="about-wrap">
+        <h3 class="about-subtitle ac-header">Role</h3>
+        <button class="about-ac-btn" type="button">
+          <svg class="about-btn-icon" width="18" height="18">
+            <use href="./img/about-img/about-icons.svg#icon-down"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="about-ac-panel ac-panel">
+        <ul class="about-role-list">
+          <li>Frontend development</li>
+          <li>HeadlessCMS,Wordpress</li>
+          <li>Blender(enjoy)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="about-ac ac">
+      <div class="about-wrap">
+        <h3 class="about-subtitle ac-header">Education</h3>
+        <button class="about-ac-btn" type="button">
+          <svg class="about-btn-icon" width="18" height="18">
+            <use href="./img/about-img/about-icons.svg#icon-down"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="about-ac-panel ac-panel">
+        <ul class="about-education-list">
+          <li>
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li>
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="about-role-wrapper">
-    <div class="about-wrap">
-      <h3 class="about-subtitle">Role</h3>
-      <button class="about-btn" type="button"></button>
-    </div>
-    <ul class="about-role-list">
-      <li>Frontend development</li>
-      <li>HeadlessCMS,Wordpress</li>
-      <li>Blender(enjoy)</li>
-    </ul>
-  </div>
-  <div class="about-education-wrapper">
-    <div class="about-wrap">
-      <h3 class="about-subtitle">Education</h3>
-      <button class="about-btn" type="button"></button>
-    </div>
-    <ul class="about-education-list">
-      <li>
-        2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-      </li>
-      <li>
-        2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New
-        York
-      </li>
-      <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
-    </ul>
-  </div>
-  <div class="about-skills">
+
+  <!-- Swiper -->
+  <div class="about-skills swiper">
     <ul class="about-skills-list">
-      <li class="about-skills-item about-skills-item-accent">HTML/CSS</li>
+      <li class="about-skills-item">HTML/CSS</li>
       <li class="about-skills-item">JavaScript</li>
       <li class="about-skills-item">React</li>
       <li class="about-skills-item">Node.js</li>
       <li class="about-skills-item">React Native</li>
       <li class="about-skills-item">Soft skills</li>
     </ul>
+    <div class="swiper-button-next"></div>
+    <button class="about-swiper-btn swiper-button-next" type="button">
+      <svg class="about-skills-btn-icon" width="28" height="28">
+        <use href="./img/about-img/about-icons.svg##icon-arrow-right"></use>
+      </svg>
+    </button>
   </div>
 </section>
