@@ -4,9 +4,9 @@ import 'swiper/css';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const swiperContainer = document.querySelector('.swiper');
+const swiperCont = document.querySelector('.swiper');
 
-const swiper = new Swiper(swiperContainer, {
+const swiper = new Swiper(swiperCont, {
   initialSlide: 0,
   navigation: {
     nextEl: '.swiper-button-next',
