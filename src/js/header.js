@@ -2,7 +2,7 @@ functionHeader();
 export function functionHeader() {
   const modalWindow = document.querySelector('.backdrop');
   const openMenuBtn = document.querySelector('.open-menu-btn');
-  const closeModalBtn = document.querySelector('.modal-close-btn');
+  const closeModalBtnHeader = document.querySelector('.modal-close-btn');
   const modalMenu = document.querySelector('.navi-modal-wrapper');
 
   const navigation = document.querySelector('.navi');
@@ -10,7 +10,7 @@ export function functionHeader() {
   const itemsMenu = document.querySelector('.nav-wrapper');
 
   openMenuBtn.addEventListener('click', interactionModalWindow);
-  // closeModalBtn.addEventListener('click', interactionModalWindow);
+  closeModalBtnHeader.addEventListener('click', interactionModalWindow);
   modalMenu.addEventListener('click', interactionModalWindow);
 
   menu.addEventListener('click', interactionMenu);
