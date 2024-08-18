@@ -46,7 +46,7 @@ async function showReviews() {
         },
         grabCursor: true,
         loop: false,
-        speed: 600, // Зменште швидкість для плавнішої прокрутки
+        speed: 600,
         breakpoints: {
           768: {
             slidesPerView: 1,
@@ -70,7 +70,7 @@ async function showReviews() {
       swiper.on('reachBeginning', () => updateNavigationButtons(swiper));
 
       updateNavigationButtons(swiper);
-      swiper.update(); // Додайте цей рядок для оновлення слайдера
+      swiper.update(); 
     } else {
       ulElement.innerHTML = '<li class="item-review">Not found</li>';
     }

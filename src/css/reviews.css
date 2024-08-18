@@ -129,9 +129,9 @@
 
 /* Стиль для активного слайду */
 .swiper-slide-active {
-  border: 2px solid #f39c12; /* або будь-який інший колір для виділення */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Додатковий ефект тіні, якщо потрібно */
-  transition: border 0.3s ease, box-shadow 0.3s ease; /* Плавна анімація для бордеру і тіні */
+  border: 2px solid #f39c12;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transition: border 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .swiper-review {
