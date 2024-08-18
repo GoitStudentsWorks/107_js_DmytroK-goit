@@ -1,6 +1,9 @@
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
 // Accordion
-new Accordion('.accordion-container', {
-  duration: 300,
+new Accordion('.faq-accordion-container', {
+  // duration: 300,
   showMultiple: false,
   collapse: true,
 });

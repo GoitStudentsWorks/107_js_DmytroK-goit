@@ -1,13 +1,3 @@
-/* from Accordion/dist/accordion.css*/
-/**
- * Accordion v3.3.4
- * Lightweight and accessible accordion module created in pure Javascript
- * https://github.com/michu2k/Accordion
- *
- * Copyright (c) Michał Strumpf
- * Published under MIT License
- */
-
 .faq-section {
   margin-top: 64px;
 }
@@ -23,21 +13,26 @@
   letter-spacing: -0.32px;
 }
 
-.ac {
-  border: 1px solid #eee;
+.faq-section .faq-ac {
+  border: 1px solid rgba(250, 250, 250, 0.2);
   box-sizing: border-box;
 
   border-right: none;
   border-left: none;
+
+  background-color: #1c1d20;
+
+  margin: 0;
+  padding: 0;
 }
 
-.accordion-question {
+.faq-question {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.accordion-btn {
+.faq-accordion-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,17 +40,20 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  border: 1px solid #fafafa;
-  width: 20px;
-  height: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-
-  /* background-color: transparent; */
-
+  background-color: transparent;
   cursor: pointer;
 }
 
-.ac-header {
+.faq-accordion-btn {
+  stroke: #fafafa;
+  fill: transparent;
+}
+
+.faq-section .faq-ac .faq-ac-header {
   color: #fafafa;
 
   font-size: 20px;
@@ -70,30 +68,15 @@
   padding-right: 40px;
 }
 
-.ac .ac-trigger {
-  text-align: left;
-  width: 100%;
-  display: block;
-  cursor: pointer;
-  background-color: transparent;
-  transition: color 0.25s ease;
-  position: relative;
-  text-decoration: none;
-  margin: 0;
-  border: 0;
+.faq-section .faq-ac .faq-ac-trigger {
+  padding-left: 0;
 }
 
-.ac .ac-trigger::after {
-  text-align: center;
-  width: 15px;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  position: absolute;
-  right: 10px;
-  top: 50%;
+.faq-section .faq-ac .faq-ac-trigger::after {
+  content: '';
 }
 
-.ac .ac-panel {
+.faq-ac .faq-ac-panel {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
@@ -109,21 +92,11 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.32px;
+
+  background-color: #1c1d20;
 }
 
-.ac.js-enabled .ac-panel {
-  visibility: hidden;
-}
-
-.ac.is-active .ac-panel {
-  visibility: visible;
-}
-
-.ac.is-active > .ac-header .ac-trigger::after {
-  content: '–';
-}
-
-.ac.is-active .accordion-btn {
+.faq-ac.is-active .faq-accordion-btn {
   transform: translateY(-50%) rotate(180deg);
 }
 
@@ -134,14 +107,19 @@
     margin-top: 96px;
   }
 
-  .ac-header {
+  .faq-ac-headerr {
     padding-top: 48px;
     padding-bottom: 24px;
   }
 
-  .ac .ac-panel {
+  .faq-ac .faq-ac-panel {
     padding-right: 32px;
     padding-bottom: 26px;
+  }
+
+  .faq-accordion-btn {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -151,34 +129,39 @@
     margin-top: 164px;
   }
 
-  .accordion-container {
+  .faq-accordion-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .ac {
+  .faq-ac {
     flex: 0 0 50%;
   }
 
-  .ac-header {
+  .faq-ac-header {
     padding-top: 32px;
     padding-bottom: 26px;
   }
 
-  .ac:nth-child(odd) {
-    border-right: 1px solid #eee;
+  .faq-ac:nth-child(odd) {
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
   }
 
-  .ac:nth-child(even) {
+  .faq-ac:nth-child(even) {
     padding-left: 16px;
   }
 
-  .ac:nth-child(odd) .accordion-btn {
+  .faq-ac:nth-child(odd) .faq-accordion-btn {
     right: 32px;
   }
 
-  .ac .ac-panel {
+  .faq-ac .faq-ac-panel {
     padding-right: 32px;
     padding-bottom: 26px;
+  }
+
+  .faq-accordion-btn {
+    width: 40px;
+    height: 40px;
   }
 }
