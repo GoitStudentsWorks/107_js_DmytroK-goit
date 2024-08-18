@@ -56,6 +56,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
   }
 }
 
@@ -136,6 +137,7 @@ html {
 @media screen and (min-width: 768px) {
   .open-menu-btn {
     display: none;
+
   }
 }
 
@@ -195,7 +197,7 @@ html {
   z-index: 1000;
 }
 
-.modal {
+/* .modal {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -208,12 +210,12 @@ html {
 
   width: 100vw;
   height: 100vh;
-
   transform: translate(-50%, -50%) scale(1);
 }
 
 @media screen and (max-width: 375px) and (min-resolution: 192dpi) {
   .modal {
     background-image: url('/img/header2x.png');
+
   }
-}
+} */

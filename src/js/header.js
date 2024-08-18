@@ -1,3 +1,4 @@
+functionHeader();
 export function functionHeader() {
   const modalWindow = document.querySelector('.backdrop');
   const openMenuBtn = document.querySelector('.open-menu-btn');
