@@ -45,14 +45,15 @@ async function showReviews() {
           nextSlideMessage: 'Next slide',
         },
         grabCursor: true,
+        loop: false,
         speed: 600,
         breakpoints: {
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 16,
           },
           1440: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 16,
           },
         },
@@ -69,6 +70,7 @@ async function showReviews() {
       swiper.on('reachBeginning', () => updateNavigationButtons(swiper));
 
       updateNavigationButtons(swiper);
+      swiper.update(); 
     } else {
       ulElement.innerHTML = '<li class="item-review">Not found</li>';
     }
@@ -96,5 +98,3 @@ function updateNavigationButtons(swiper) {
   prevButton.classList.toggle('disabled', prevButton.disabled);
   nextButton.classList.toggle('disabled', nextButton.disabled);
 }
-
-showReviews();
