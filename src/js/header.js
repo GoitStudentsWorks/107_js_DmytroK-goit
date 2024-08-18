@@ -10,7 +10,7 @@ export function functionHeader() {
   const itemsMenu = document.querySelector('.nav-wrapper');
 
   openMenuBtn.addEventListener('click', interactionModalWindow);
-  closeModalBtn.addEventListener('click', interactionModalWindow);
+  // closeModalBtn.addEventListener('click', interactionModalWindow);
   modalMenu.addEventListener('click', interactionModalWindow);
 
   menu.addEventListener('click', interactionMenu);
