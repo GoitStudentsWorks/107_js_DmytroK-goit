@@ -43,11 +43,13 @@ const swiper = new Swiper(swiperContainer, {
     },
   },
 });
+
 const container = document.querySelector('.about-accordion-container');
 
 const accordion = new Accordion(container, {
   openOnInit: [0],
   showMultiple: true,
+  duration: 500,
   elementClass: 'about-ac',
   panelClass: 'about-ac-panel',
   triggerClass: 'about-ac-btn',
