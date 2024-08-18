@@ -406,30 +406,30 @@
 
 /* -----Reset Swiper Styles----- */
 
-.swiper-button-next::after {
+/* .swiper-button-next::after {
   content: '';
   display: none;
-}
+} */
 
-.swiper {
+/* .swiper {
   display: flex;
   flex-direction: column;
   margin-top: 0;
   border: none;
-  /* max-width: 1376px; */
+  max-width: 1376px;
   height: 130px;
   background: none;
-}
+} */
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+/* @media screen and (min-width: 375px) and (max-width: 767px) {
   .swiper {
     min-height: 130px !important;
   }
-}
+} */
 
-.swiper-slide {
+/* .swiper-slide {
   text-align: center;
-  /* font-size: 18px; */
+  font-size: 18px;
   background: none;
   display: flex;
   justify-content: center;
@@ -438,4 +438,4 @@
   border: none;
   width: 130px;
   height: 130px;
-}
+} */
