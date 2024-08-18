@@ -1,5 +1,5 @@
 import './js/api.js';
-import './js/header.js';
+// import './js/header.js';
 import './js/about-me.js';
 import './js/project.js';
 import './js/faq.js';
