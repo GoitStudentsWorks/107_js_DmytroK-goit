@@ -15,8 +15,9 @@
   padding: 16px;
   width: 98%;
   margin: 0 auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
+
 .hero-header {
   font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
@@ -32,6 +33,7 @@
   letter-spacing: -3%;
   text-align: left;
 }
+
 .hero_list {
   position: absolute;
   bottom: 32px;
@@ -57,13 +59,14 @@
 }
 
 .hero_social_media:hover,
-.hero_social_media:focus{
-    background-color: rgba(248, 127, 127, 0.216);
+.hero_social_media:focus {
+  background-color: rgba(248, 127, 127, 0.216);
 }
 
 .hero_email:hover,
-.hero_email:focus{
-    background-color: rgba(248, 127, 127, 0.216);;
+.hero_email:focus {
+  background-color: rgba(248, 127, 127, 0.216);
+  ;
 }
 
 .hero_email {
@@ -87,10 +90,12 @@
     width: 343px;
     margin: 0;
   }
+
   .container-hero {
     height: 812px;
   }
 }
+
 /* ------tablet------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   .container {
@@ -117,11 +122,13 @@
     height: 55px;
     font-size: 16px;
   }
+
   .hero_email {
     font-size: 16px;
     height: 55px;
   }
 }
+
 /* ------desktop------------------------------------------------------------------------------------------ */
 @media screen and (min-width: 1440px) {
   section.container {
@@ -129,6 +136,7 @@
     width: 1376px;
     margin: 0;
   }
+
   /* .section-hero{
        
         background-image: url(../img/Hero_2x.png);
@@ -136,6 +144,7 @@
   .container-hero {
     width: 1184px;
   }
+
   .hero-header {
     display: flex;
     justify-content: center;
