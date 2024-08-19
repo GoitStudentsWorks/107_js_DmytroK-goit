@@ -1,6 +1,7 @@
 .project-container {
 	width: 311px;
 	height: 952px;
+	margin-top: 164px;
 }
 
 .project-head {
@@ -205,6 +206,7 @@ li.project-slide {
 	.project-container {
 		width: 640px;
 		height: 1379px;
+		margin-top: 96px;
 	}
 
 	.project-container>.project-swiper {
@@ -345,6 +347,7 @@ li.project-slide {
 	.project-container {
 		width: 1303px;
 		height: 813px;
+		margin-top: 64px;
 	}
 
 	.project-container>.project-swiper {
@@ -423,7 +426,7 @@ li.project-slide {
 	.swiper-part-img {
 		width: 582px;
 		height: 100%;
-		object-fit: contain;
+		object-fit: cover;
 		background: #242527;
 	}
 
