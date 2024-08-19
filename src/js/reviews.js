@@ -70,7 +70,7 @@ async function showReviews() {
       swiper.on('reachBeginning', () => updateNavigationButtons(swiper));
 
       updateNavigationButtons(swiper);
-      swiper.update(); 
+      swiper.update();
     } else {
       ulElement.innerHTML = '<li class="item-review">Not found</li>';
     }
