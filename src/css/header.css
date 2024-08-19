@@ -127,6 +127,7 @@ html {
   padding: 0;
   background-color: transparent;
   border: none;
+
 }
 
 .open-menu-btn:hover,
@@ -136,7 +137,7 @@ html {
 
 @media screen and (min-width: 768px) {
   .open-menu-btn {
-    display: none;
+    /* display: none; */
 
   }
 }

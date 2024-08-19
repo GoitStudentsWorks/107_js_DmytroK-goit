@@ -1,15 +1,18 @@
-<header class="header">
+<section class="header">
   <div class="header-wrapper container">
     <a href="./index.html" class="logo">
-      <img
-        srcset="./img/header-logo@x1.png 1x, ./img/header-logox2.png 2x"
-        src="./img/header-logo@x1.png"
-        alt="site logo"
-      />
+      <img srcset="./img/header-logo@x1.png 1x, ./img/header-logox2.png 2x" src="./img/header-logo@x1.png"
+        alt="site logo" />
       <p class="logo-text">jefferson*</p>
     </a>
     <div class="navigation">
       <span class="menu">Menu</span>
+
+      <button class="open-menu-btn" type="button" aria-label="Open menu button">
+        <svg class="burger-menu" width="28" height="28">
+          <!-- <use href=""></use> -->
+        </svg>
+      </button>
       <nav class="navi">
         <ul class="nav-wrapper">
           <li class="nav-item">
@@ -25,13 +28,11 @@
             <a class="nav-link" href="#faq">FAQ</a>
           </li>
         </ul>
+
       </nav>
+
     </div>
-    <button class="open-menu-btn" type="button" aria-label="Open menu button">
-      <svg class="burger-menu" width="28" height="28">
-        <!-- <use href=""></use> -->
-      </svg>
-    </button>
+
     <a class="order-links" href="#order"> Order the project </a>
   </div>
-</header>
+</section>
