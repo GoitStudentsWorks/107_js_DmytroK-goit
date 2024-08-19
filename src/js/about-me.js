@@ -41,6 +41,7 @@ const swiper = new Swiper(swiperCont, {
     // when window width is >= 1440px
     1440: {
       slidesPerView: 'auto',
+      width: 200,
     },
   },
 });
