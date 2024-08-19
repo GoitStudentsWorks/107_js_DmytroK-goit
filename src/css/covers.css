@@ -1,3 +1,7 @@
+.container .covers-container {
+  margin-top: 64px;
+}
+
 .covers-visually-hidden {
   position: absolute;
   width: 1px;
@@ -64,11 +68,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container .covers-container {
+    margin-top: 96px;
+  }
   .covers-content {
     height: 960px;
   }
   .covers-marquee__item {
     width: 544px;
     height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container .covers-container {
+    margin-top: 164px;
   }
 }
