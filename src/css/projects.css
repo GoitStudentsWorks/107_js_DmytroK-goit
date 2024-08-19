@@ -1,9 +1,12 @@
 .project-container {
 	width: 311px;
 	height: 952px;
+	margin-top: 164px;
 }
 
 .project-head {
+	display: flex;
+	align-self: flex-start;
 	color: rgba(250, 250, 250, 0.40);
 	font-family: "Inter Tight";
 	font-size: 16px;
@@ -15,7 +18,7 @@
 	margin-bottom: 32px;
 }
 
-.project-container>.mySwiper {
+.project-container>.project-swiper {
 	width: 100%;
 	height: 812px;
 	border-radius: 24px;
@@ -25,7 +28,7 @@
 .swiper-slide-part-1 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+			justify-content: space-between;
 	background: #FAFAFA;
 	height: 50%;
 	padding: 32px 32px 32px 32px;
@@ -89,7 +92,7 @@
 }
 
 .swiper-part-img {
-	width: 311px;
+	width: 279px;
 	height: 195px;
 	margin: 0 auto;
 }
@@ -138,17 +141,31 @@
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
+	gap: 12px;
+}
+
+.btn-circle {
+	width: 52px;
+	height: 52px;
+	border-radius: 60px;
+	border: 1px solid rgba(250, 250, 250, 0.50);
+	flex-shrink: 0;
+	display: flex;
+	padding: 14px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 .project-arrow .swiper-button-prev {
 	position: relative;
-	left: -20px;
+	left: -12px;
 	top: 10px;
 }
 
 .project-arrow .swiper-button-next {
 	position: relative;
-	left: 20px;
+	left: 12px;
 	top: 10px;
 }
 
@@ -162,8 +179,6 @@
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	border: 1px solid #fff;
-	border-radius: 60px;
 	fill: rgba(250, 250, 250, 0.1);
 	stroke: #fff;
 	cursor: pointer;
@@ -181,6 +196,8 @@ svg.swiper-button-icon.icon-right {
 }
 
 li.project-slide {
+	border: none;
+	padding: 0;
 	height: 100%;
 }
 
@@ -189,9 +206,10 @@ li.project-slide {
 	.project-container {
 		width: 640px;
 		height: 1379px;
+		margin-top: 96px;
 	}
 
-	.project-container>.mySwiper {
+	.project-container>.project-swiper {
 		width: 100%;
 		height: 1191px;
 		border-radius: 24px;
@@ -201,10 +219,7 @@ li.project-slide {
 	.swiper-slide-part-1 {
 		height: 50%;
 		padding: 64px;
-	}
-
-	.project-skils-list {
-		/* margin-bottom: 164px; */
+		justify-content: space-between;
 	}
 
 	.project-skils-item {
@@ -240,7 +255,7 @@ li.project-slide {
 	}
 
 	.swiper-part-img {
-		width: 614px;
+		width: 582px;
 		height: 385px;
 		object-fit: cover;
 	}
@@ -282,17 +297,36 @@ li.project-slide {
 	.project-arrow {
 		width: 156px;
 		height: 68px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		gap: 20px;
 	}
-
+	
+	.btn-circle {
+		width: 68px;
+		height: 68px;
+		border-radius: 60px;
+		border: 1px solid rgba(250, 250, 250, 0.50);
+		flex-shrink: 0;
+		display: flex;
+		padding: 18px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	
 	.project-arrow .swiper-button-prev {
 		position: relative;
-		left: -35px;
+		left: -20px;
 		top: 10px;
 	}
-
+	
 	.project-arrow .swiper-button-next {
 		position: relative;
-		left: 35px;
+		left: 20px;
 		top: 10px;
 	}
 
@@ -313,9 +347,10 @@ li.project-slide {
 	.project-container {
 		width: 1303px;
 		height: 813px;
+		margin-top: 64px;
 	}
 
-	.project-container>.mySwiper {
+	.project-container>.project-swiper {
 		width: 100%;
 		height: 625px;
 		border-radius: 24px;
@@ -335,8 +370,9 @@ li.project-slide {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: space-between;
 		width: 50%;
-		height: 497px;
+		height: 100%;
 		padding: 64px;
 		background: #FAFAFA;
 	}
@@ -381,21 +417,17 @@ li.project-slide {
 	}
 
 	.swiper-slide-part-2 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		width: 50%;
 		height: 100%;
-		justify-content: center;
-		align-items: center;
 		flex-shrink: 0;
+		padding: 100px 0 100px 0;
 	}
 
 	.swiper-part-img {
-		width: 614px;
+		width: 582px;
 		height: 100%;
-		object-fit: contain;
-
+		object-fit: cover;
+		background: #242527;
 	}
 
 	.img-1 {
@@ -431,15 +463,39 @@ li.project-slide {
 		}
 	}
 
+	.project-arrow {
+		width: 156px;
+		height: 68px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		gap: 20px;
+	}
+	
+	.btn-circle {
+		width: 68px;
+		height: 68px;
+		border-radius: 60px;
+		border: 1px solid rgba(250, 250, 250, 0.50);
+		flex-shrink: 0;
+		display: flex;
+		padding: 18px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	
 	.project-arrow .swiper-button-prev {
 		position: relative;
-		left: -35px;
+		left: -20px;
 		top: 10px;
 	}
-
+	
 	.project-arrow .swiper-button-next {
 		position: relative;
-		left: 35px;
+		left: 20px;
 		top: 10px;
 	}
 
