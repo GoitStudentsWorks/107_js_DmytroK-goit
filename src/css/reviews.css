@@ -130,8 +130,8 @@
 /* Стиль для активного слайду */
 .swiper-slide-active {
   border: 2px solid #f39c12;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-  transition: border 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .swiper-review {
@@ -148,10 +148,12 @@
     width: 344px !important;
     height: 302px;
   }
+
   .text-review {
     width: 296px;
     height: 90px;
   }
+
   .swiper-slide {
     width: calc(50% - 16px);
     height: 302px;
@@ -163,10 +165,12 @@
     width: 332px !important;
     height: 302px;
   }
+
   .text-review {
     width: 284px;
     height: 90px;
   }
+
   .swiper-slide {
     width: calc(25% - 16px);
     height: 302px;

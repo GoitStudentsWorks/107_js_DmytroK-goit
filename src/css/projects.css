@@ -15,7 +15,7 @@
 	margin-bottom: 32px;
 }
 
-.project-container > .mySwiper {
+.project-container>.mySwiper {
 	width: 100%;
 	height: 812px;
 	border-radius: 24px;
@@ -94,22 +94,31 @@
 	margin: 0 auto;
 }
 
-.img-1{
+.img-1 {
 	background-image: url(../img/project-img/swiper_mob_img1_x1.png);
 }
 
-.img-2{
+.img-2 {
 	background-image: url(../img/project-img/swiper_mob_img2_x1.png);
 }
 
-.img-3{
+.img-3 {
 	background-image: url(../img/project-img/swiper_mob_img3_x1.png);
 }
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.img-1{background-image: url(../img/project-img/swiper_mob_img1_x2.png);}
-	.img-2{background-image: url(../img/project-img/swiper_mob_img2_x2.png);}
-	.img-3{background-image: url(../img/project-img/swiper_mob_img3_x2.png);}
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.img-1 {
+		background-image: url(../img/project-img/swiper_mob_img1_x2.png);
+	}
+
+	.img-2 {
+		background-image: url(../img/project-img/swiper_mob_img2_x2.png);
+	}
+
+	.img-3 {
+		background-image: url(../img/project-img/swiper_mob_img3_x2.png);
+	}
 }
 
 .project-arrow {
@@ -170,7 +179,7 @@ svg.swiper-button-icon.icon-right {
 		height: 1379px;
 	}
 
-	.project-container > .mySwiper {
+	.project-container>.mySwiper {
 		width: 100%;
 		height: 1191px;
 		border-radius: 24px;
@@ -224,45 +233,55 @@ svg.swiper-button-icon.icon-right {
 		object-fit: cover;
 	}
 
-	.img-1{
+	.img-1 {
 		background-image: url(../img/project-img/swiper_img1_x1.png);
 	}
-	
-	.img-2{
+
+	.img-2 {
 		background-image: url(../img/project-img/swiper_img2_x1.png);
 	}
-	
-	.img-3{
+
+	.img-3 {
 		background-image: url(../img/project-img/swiper_img3_x1.png);
 	}
-	
-	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-		.img-1{background-image: url(../img/project-img/swiper_img1_x2.png);}
-		.img-2{background-image: url(../img/project-img/swiper_img2_x2.png);}
-		.img-3{background-image: url(../img/project-img/swiper_img3_x2.png);}
+
+	@media screen and (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		.img-1 {
+			background-image: url(../img/project-img/swiper_img1_x2.png);
+		}
+
+		.img-2 {
+			background-image: url(../img/project-img/swiper_img2_x2.png);
+		}
+
+		.img-3 {
+			background-image: url(../img/project-img/swiper_img3_x2.png);
+		}
 	}
-.project-arrow {
-	width: 156px;
-	height: 68px;
-}
 
-.project-arrow .swiper-button-prev {
-	position: relative;
-	left: -35px;
-	top: 10px;
-}
+	.project-arrow {
+		width: 156px;
+		height: 68px;
+	}
 
-.project-arrow .swiper-button-next {
-	position: relative;
-	left: 35px;
-	top: 10px;
-}
+	.project-arrow .swiper-button-prev {
+		position: relative;
+		left: -35px;
+		top: 10px;
+	}
 
-svg.swiper-button-icon.icon-left,
-svg.swiper-button-icon.icon-right {
-	width: 32px;
-	height: 32px;
-}
+	.project-arrow .swiper-button-next {
+		position: relative;
+		left: 35px;
+		top: 10px;
+	}
+
+	svg.swiper-button-icon.icon-left,
+	svg.swiper-button-icon.icon-right {
+		width: 32px;
+		height: 32px;
+	}
 
 }
 
@@ -273,14 +292,14 @@ svg.swiper-button-icon.icon-right {
 		height: 813px;
 	}
 
-	.project-container > .mySwiper {
+	.project-container>.mySwiper {
 		width: 100%;
 		height: 625px;
 		border-radius: 24px;
 		margin-bottom: 64px;
 	}
 
-	li.swiper-slide {
+	li.project-slide {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -354,36 +373,45 @@ svg.swiper-button-icon.icon-right {
 		object-fit: cover;
 	}
 
-	.img-1{
+	.img-1 {
 		background-image: url(../img/project-img/swiper_img1_x1.png);
 	}
-	
-	.img-2{
+
+	.img-2 {
 		background-image: url(../img/project-img/swiper_img2_x1.png);
 	}
-	
-	.img-3{
+
+	.img-3 {
 		background-image: url(../img/project-img/swiper_img3_x1.png);
 	}
-	
-	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-		.img-1{background-image: url(../img/project-img/swiper_img1_x2.png);}
-		.img-2{background-image: url(../img/project-img/swiper_img2_x2.png);}
-		.img-3{background-image: url(../img/project-img/swiper_img3_x2.png);}
+
+	@media screen and (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		.img-1 {
+			background-image: url(../img/project-img/swiper_img1_x2.png);
+		}
+
+		.img-2 {
+			background-image: url(../img/project-img/swiper_img2_x2.png);
+		}
+
+		.img-3 {
+			background-image: url(../img/project-img/swiper_img3_x2.png);
+		}
 	}
-	
+
 	.project-arrow .swiper-button-prev {
 		position: relative;
 		left: -35px;
 		top: 10px;
 	}
-	
+
 	.project-arrow .swiper-button-next {
 		position: relative;
 		left: 35px;
 		top: 10px;
 	}
-	
+
 	svg.swiper-button-icon.icon-left,
 	svg.swiper-button-icon.icon-right {
 		width: 32px;
