@@ -5,6 +5,7 @@
 }
 
 .benefits-title {
+  text-align: left;
   background-color: #1c1d20;
   font-weight: 600;
   font-size: 16px;
@@ -18,7 +19,13 @@
   margin-bottom: 32px;
 }
 
+.text-container-benefits {
+  text-align: left;
+}
 .benefits-list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .benefits-list-title {
@@ -38,10 +45,15 @@
 }
 
 .benefits-icon {
+  display: block;
   border-radius: 10px;
   background: #ed3b44;
   margin-bottom: 64px;
   padding: 12px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
 }
 
 .order-link {
