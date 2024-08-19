@@ -1,4 +1,4 @@
-.work-together-form button {
+.work-together-btn {
   color: #fafafa;
   background-color: #ed3b44;
   width: 100px;
@@ -8,6 +8,20 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   /* text-shadow: 0 4px 4px 0, rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.work-together-btn:hover {
+  background-color: #E0373F;
+}
+
+.work-together-btn:focus {
+
+  background-color: #E0373F;
 }
 
 .work-together-adress {

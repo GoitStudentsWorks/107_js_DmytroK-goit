@@ -1,8 +1,11 @@
 import axios from 'axios';
 function hideModal() {
   const modal = document.querySelector('.modal-window');
+
   if (modal) {
     modal.style.display = 'none';
+    document.removeEventListener('click', handleClickOutside);
+    document.removeEventListener('keydown', handleEscapeKey);
   }
 }
 hideModal();
@@ -10,6 +13,21 @@ function showModal() {
   const modal = document.querySelector('.modal-window');
   if (modal) {
     modal.style.display = 'block';
+    document.addEventListener('click', handleClickOutside);
+    document.addEventListener('keydown', handleEscapeKey);
+  }
+}
+
+function handleClickOutside(event) {
+  const modalContent = document.querySelector('.modal-content');
+  if (modalContent && !modalContent.contains(event.target)) {
+    hideModal();
+  }
+}
+
+function handleEscapeKey(event) {
+  if (event.key === 'Escape') {
+    hideModal();
   }
 }
 
@@ -37,6 +55,7 @@ if (commentsForm) {
       .then(response => {
         console.log('Форма успішно відправлена:', response.data);
         commentsForm.reset();
+
         showModal();
       })
       .catch(error => {
