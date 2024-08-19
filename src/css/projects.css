@@ -171,6 +171,9 @@ svg.swiper-button-icon.icon-right {
 	transform: rotate(180deg);
 }
 
+li.project-slide {
+	height: 100%;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
 
@@ -281,6 +284,10 @@ svg.swiper-button-icon.icon-right {
 	svg.swiper-button-icon.icon-right {
 		width: 32px;
 		height: 32px;
+	}
+
+	li.project-slide {
+		height: 100%;
 	}
 
 }
