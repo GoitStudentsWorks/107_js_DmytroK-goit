@@ -57,12 +57,12 @@ async function showReviews() {
             spaceBetween: 16,
           },
         },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          type: 'bullets',
-          dynamicBullets: true,
-        },
+        // pagination: {
+        //   el: '.swiper-pagination',
+        //   clickable: true,
+        //   type: 'bullets',
+        //   dynamicBullets: true,
+        // },
       });
 
       swiper.on('slideChange', () => updateNavigationButtons(swiper));
