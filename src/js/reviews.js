@@ -48,6 +48,9 @@ async function showReviews() {
         loop: false,
         speed: 600,
         breakpoints: {
+          320: {
+            slidesPerView: 'auto',
+          },
           768: {
             slidesPerView: 'auto',
             spaceBetween: 16,
