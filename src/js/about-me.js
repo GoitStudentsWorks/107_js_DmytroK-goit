@@ -1,15 +1,15 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const swiperCont = document.querySelector('.swiper');
+const swiperCont = document.querySelector('.about-skills');
 
 const swiper = new Swiper(swiperCont, {
   initialSlide: 0,
   navigation: {
-    nextEl: '.swiper-button-next',
+    nextEl: '.about-swiper-btn',
   },
   keyboard: {
     enabled: true,
@@ -19,11 +19,13 @@ const swiper = new Swiper(swiperCont, {
   mousewheel: {
     invert: true,
   },
+  grabCursor: true,
   touchEventsTarget: 'wrapper',
   slideClass: 'about-skills-item',
   slideActiveClass: 'about-skills-item-accent',
   wrapperClass: 'about-skills-list',
   rewind: true,
+  width: 130,
 
   breakpoints: {
     // when window width is >= 375px
@@ -38,11 +40,13 @@ const swiper = new Swiper(swiperCont, {
     },
     // when window width is >= 1440px
     1440: {
-      slidesPerView: 6,
-      width: 1200,
+      slidesPerView: 'auto',
+      width: 200,
     },
   },
 });
+
+swiper.init();
 
 const container = document.querySelector('.about-accordion-container');
 
