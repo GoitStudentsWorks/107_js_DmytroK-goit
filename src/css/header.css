@@ -17,17 +17,14 @@
   }
 
 
-
   .header-wrapper {
     display: flex;
-    align-items: flex-start;
-
+    align-items: center;
     justify-content: space-between;
   }
 
   .logo {
     display: flex;
-
     gap: 8px;
     align-items: flex-start;
     justify-content: center;
@@ -418,5 +415,11 @@
   @media (min-width: 1440px) {
     .mob-menu {
       display: none;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }

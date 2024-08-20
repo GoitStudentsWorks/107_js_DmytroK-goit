@@ -135,7 +135,7 @@
     width: 343px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -229,9 +229,9 @@
     padding: 0px 32px;
     width: 703px;
     margin: 0 auto;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .work-together-block {
@@ -291,19 +291,19 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .container .work-together {
     padding: 0px 32px;
     width: 1376px;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 196px;
   }
 
   .container.work-together {
     padding-left: 196px;
     padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 196px;
   }
 
   .work-together-form {
