@@ -1,25 +1,3 @@
-// functionHeader();
-// export function functionHeader() {
-//   // const modalWindow = document.querySelector('.backdrop');
-//   // const openMenuBtn = document.querySelector('.open-menu-btn');
-//   // const closeModalBtnHeader = document.querySelector('.modal-close-btn');
-//   // const modalMenu = document.querySelector('.navi-modal-wrapper');
-//   // const navigation = document.querySelector('.navi');
-//   // const menu = document.querySelector('.menu');
-//   // const itemsMenu = document.querySelector('.nav-wrapper');
-//   // openMenuBtn.addEventListener('click', interactionModalWindow);
-//   // closeModalBtnHeader.addEventListener('click', interactionModalWindow);
-//   // modalMenu.addEventListener('click', interactionModalWindow);
-//   // menu.addEventListener('click', interactionMenu);
-//   // itemsMenu.addEventListener('click', interactionMenu);
-//   // function interactionModalWindow() {
-//   //   modalWindow.classList.toggle('is-open');
-//   //   document.body.classList.toggle('modal-open');
-//   // }
-//   // function interactionMenu() {
-//   //   navigation.classList.toggle('is-open');
-//   // }
-
 function hideMenuHeader() {
   const modalWindow = document.querySelector('.navi');
   if (modalWindow) {
@@ -56,5 +34,53 @@ document.addEventListener('click', function (event) {
     !menuOpenLink.contains(event.target)
   ) {
     hideMenuHeader();
+  }
+});
+
+// Функція для показу мобільного меню
+function showMobileMenu() {
+  const mobMenu = document.querySelector('.mob-menu');
+  if (mobMenu) {
+    mobMenu.classList.add('is-open'); // Додаємо клас для показу меню
+    document.body.classList.add('no-scroll'); // Запобігаємо прокручуванню сторінки
+  }
+}
+
+// Функція для приховування мобільного меню
+function hideMobileMenu() {
+  const mobMenu = document.querySelector('.mob-menu');
+  if (mobMenu) {
+    mobMenu.classList.remove('is-open'); // Видаляємо клас для приховування меню
+    document.body.classList.remove('no-scroll'); // Дозволяємо прокручування сторінки
+  }
+}
+
+// Обробник подій для кнопки відкриття мобільного меню
+const openMenuBtn = document.querySelector('.open-menu-btn');
+if (openMenuBtn) {
+  openMenuBtn.addEventListener('click', function () {
+    showMobileMenu();
+  });
+}
+
+// Обробник подій для кнопки закриття мобільного меню
+const closeMenuBtn = document.querySelector('.mob-menu-close-btn');
+if (closeMenuBtn) {
+  closeMenuBtn.addEventListener('click', function () {
+    hideMobileMenu();
+  });
+}
+
+// Закриття мобільного меню при натисканні поза меню
+document.addEventListener('click', function (event) {
+  const mobMenu = document.querySelector('.mob-menu');
+  const openMenuBtn = document.querySelector('.open-menu-btn');
+
+  if (
+    mobMenu &&
+    !mobMenu.contains(event.target) &&
+    !openMenuBtn.contains(event.target)
+  ) {
+    hideMobileMenu();
   }
 });
