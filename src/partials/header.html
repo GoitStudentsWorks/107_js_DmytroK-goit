@@ -1,3 +1,61 @@
-<section class="container">
-    <p>TEST</p>
+<section class="header">
+  <div class="header-wrapper container">
+    <a href="./index.html" class="logo">
+      <img srcset="./img/header-logo@x1.png 1x, ./img/header-logox2.png 2x" src="./img/header-logo@x1.png"
+        alt="site logo" />
+      <p class="logo-text">jefferson*</p>
+    </a>
+    <button class="open-menu-btn" type="button" aria-label="Open menu button">
+      <svg class="burger-menu" width="28" height="28">
+        <use href="/img/about-img/about-icons.svg#icon-down"></use>
+      </svg>
+    </button>
+    <div class="navigation">
+      <span class="menu">Menu</span>
+
+      <nav class="navi">
+        <ul class="nav-wrapper">
+          <li class="nav-item">
+            <a class="nav-link" href="#abouts-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#work-together" class="order-btn">Order the project</a>
+  </div>
 </section>
+
+
+<div class="mob-menu">
+  <button type="button" class="mob-menu-close-btn" aria-label="close-menu">
+    <svg class="mob-menu-close-btn-icon" width="28" height="28">
+      <use href=""></use>
+    </svg>
+  </button>
+  <nav class="mob-menu-nav">
+    <ul class="mob-menu-list">
+      <li class="mob-menu-item">
+        <a href="#abouts-me" class="mob-menu-link">About me</a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#benefits" class="mob-menu-link"> Benefits </a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#projects" class="mob-menu-link"> Projects </a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#faq" class="mob-menu-link"> FAQ </a>
+      </li>
+    </ul>
+  </nav>
+  <a href="#work-together" class="mob-order-btn">Order the project</a>
+</div>

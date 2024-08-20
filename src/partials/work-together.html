@@ -1,8 +1,20 @@
-<section class="container work-together">
-    <p>TEST</p>
-    <form action="">
-        <input type="text" placeholder="enter email">
-        <input type="text" placeholder="enter comments">
-        <button type="submit">Send</button>
+<div class="work-together-block">
+  <section class="container work-together" id="work-together">
+    <div class="work-together-header-cont">
+      <img src="./img/footer-img.png" alt="footer-img" width="44" height="44" />
+      <h2>Let’s <span class="work-together-span">work</span> together</h2>
+    </div>
+    <form class="work-together-form" action="">
+      <input type="text" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        required />
+      <input type="text" name="comments" placeholder="comments" />
+      <button class="work-together-btn" type="submit">Send</button>
     </form>
-</section>
+    <address class="work-together-adress">
+      <ul>
+        <li><a href="mailto:lloydjefferson@gmail.com"></a>lloydjefferson@gmail.com</li>
+        <li><a href="tel:+3801111111111"></a>+380 11 1111 11 11</li>
+      </ul>
+    </address>
+  </section>
+</div>

@@ -1,0 +1,87 @@
+.container .covers-container {
+  margin-top: 64px;
+}
+
+.covers-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.covers-content {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background-image: url(../img/covers-img/covers-background.webp),
+    url(../img/covers-img/covers-background-2.webp);
+  height: 508px;
+}
+
+.covers-marquee {
+  display: flex;
+  width: 100%;
+  transform: rotate(16deg);
+  margin-bottom: 64px;
+}
+
+.covers-marquee__inner {
+  display: flex;
+  gap: 24px;
+  animation: marqueeScroll 65s linear infinite;
+  gap: 48px;
+  animation-play-state: paused;
+}
+
+.covers-marquee__item {
+  flex-shrink: 0;
+  width: 282px;
+  height: 162px;
+  overflow: hidden;
+}
+
+.covers-marquee__item img {
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: fill;
+}
+
+.covers-marquee__inner {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(-0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container .covers-container {
+    margin-top: 96px;
+  }
+  .covers-content {
+    height: 960px;
+  }
+  .covers-marquee__item {
+    width: 544px;
+    height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container .covers-container {
+    margin-top: 164px;
+  }
+}

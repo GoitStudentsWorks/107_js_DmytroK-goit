@@ -1,58 +1,332 @@
-.work-together button {
-    border-radius: 100%;
-    background-color: #ED3B44;
+.work-together-btn {
+  color: #fafafa;
+  background-color: #ed3b44;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  /* text-shadow: 0 4px 4px 0, rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.work-together-form input:hover {
+  background-color: inherit;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.work-together-btn:hover {
+  background-color: #E0373F;
+}
+
+.work-together-btn:focus {
+
+  background-color: #E0373F;
+}
+
+.work-together-adress {
+  font-style: normal;
 }
 
 .work-together {
-    display: block;
-    justify-content: center;
+  display: block;
+  justify-content: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
-    .container {
-        /* padding: 0px 16px; */
-        width: 343px;
-        margin: 0 auto;
-    }
+  .container {
+    padding: 0px 16px;
+    width: 343px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .work-together {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .work-together {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .work-together-block {
+    margin-top: 64px;
+  }
+
+  .work-together h2 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .work-together-span {
+    color: #ed3b44;
+  }
+
+  .work-together-header-cont {
+    display: flex;
+    padding-top: 32px;
+
+  }
+
+  .work-together-header-cont img {
+    margin-right: 8px;
+    max-width: 44px;
+    max-height: 44px;
+  }
+
+  .work-together-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding-top: 64px;
+  }
+
+  .work-together-form input {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    width: 343px;
+    height: 44px;
+  }
+
+  .work-together-adress {
+    padding-top: 64px;
+    width: 100%;
+  }
+
+  .work-together-adress ul {
+    display: flex;
+    gap: 4px;
+  }
+
+
+  .work-together-adress li {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
 }
 
 @media screen and (min-width: 375px) {
-    .container {
-        padding: 0px 16px;
-        width: 343px;
-        margin: 0 auto;
-    }
+  .container {
+    padding: 0px 16px;
+    width: 343px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .work-together {
-        margin: 0 auto;
-        display: block;
-        justify-content: center;
-    }
+  .work-together {
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+  }
+
+  .work-together-block {
+    margin-top: 64px;
+  }
+
+  .work-together-header-cont img {
+    margin-right: 8px;
+    max-width: 44px;
+    max-height: 44px;
+  }
+
+  .work-together h2 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+  }
+
+  .work-together-span {
+    color: #ed3b44;
+  }
+
+  .work-together-header-cont {
+    display: flex;
+    padding-top: 32px;
+
+  }
+
+  .work-together-header-cont img {
+    margin-right: 8px;
+  }
+
+  .work-together-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding-top: 64px;
+  }
+
+  .work-together-form input {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    color: rgba(250, 250, 250, 0.2);
+    width: 343px;
+    height: 44px;
+  }
+
+  .work-together-adress {
+    padding-top: 64px;
+  }
+
+  .work-together-adress {
+    padding-top: 64px;
+    width: 100%;
+  }
+
+  .work-together-adress ul {
+    display: flex;
+    gap: 4px;
+  }
+
+  .work-together-adress li {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        padding: 0px 32px;
-        width: 703px;
-        margin: 0 auto;
-    }
+  .container {
+    padding: 0px 32px;
+    width: 703px;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
 
+  .work-together-block {
+    margin-top: 96px;
+  }
+
+  .work-together-header-cont {
+    display: flex;
+    padding-top: 80px;
+  }
+
+  .work-together {
+    flex-direction: column;
+  }
+
+  .work-together-header-cont h2 {
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+  }
+
+  .work-together-form {
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .work-together-form input {
+    width: 245px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+  }
+
+  .work-together-form button {
+    width: 150px;
+    height: 150px;
+  }
+
+  .work-together-adress li {
+    border-radius: 60px;
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+  }
+
+  .work-together-adress {
+    padding-bottom: 169px;
+  }
 
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        padding: 0px 32px;
-        width: 1376px;
-        margin: 0 auto;
-    }
+  .container .work-together {
+    padding: 0px 32px;
+    width: 1376px;
+    margin: 0 auto;
+  }
+
+  .container.work-together {
+    padding-left: 196px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 196px;
+  }
+
+  .work-together-form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-together-form input {
+    width: 390px;
+    height: 44px;
+  }
+
+  .work-together-block {
+    margin-top: 164px;
+  }
+
+  .work-together-header-cont {
+    width: 542px;
+    padding-top: 80px;
+  }
 
 
 }

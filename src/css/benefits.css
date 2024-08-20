@@ -1,0 +1,122 @@
+.benefits-container {
+  margin: 0 auto;
+  margin-top: 64px;
+  box-sizing: border-box;
+}
+
+.benefits-title {
+  text-align: left;
+  background-color: #1c1d20;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.benefits-title-container {
+  margin-bottom: 32px;
+}
+
+.text-container-benefits {
+  text-align: left;
+}
+.benefits-list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.benefits-list-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.benefits-list {
+  border-radius: 20px;
+  padding: 24px;
+  background-color: #242527;
+  margin-bottom: 16px;
+  flex: 1 1 calc(50% - 16px);
+}
+
+.benefits-icon {
+  display: block;
+  border-radius: 10px;
+  background: #ed3b44;
+  margin-bottom: 64px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background: #1c1d20;
+  white-space: nowrap;
+  margin-top: 32px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-link:hover,
+.order-link:focus {
+  border: 1px solid #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .benefits-list {
+    margin: 0;
+  }
+
+  .benefits-list-flexbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-container {
+    display: flex;
+  }
+
+  .benefits-title {
+    width: 680px;
+  }
+  .benefits-title-container {
+    width: 680px;
+    height: 675px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .benefits-list {
+    margin: 0;
+  }
+
+  .benefits-list-container {
+    width: 100%;
+    height: 100%;
+  }
+}
