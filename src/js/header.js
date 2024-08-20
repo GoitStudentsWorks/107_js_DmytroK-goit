@@ -19,7 +19,7 @@
 //   // function interactionMenu() {
 //   //   navigation.classList.toggle('is-open');
 //   // }
-// }
+
 function hideMenuHeader() {
   const modalWindow = document.querySelector('.navi');
   if (modalWindow) {
