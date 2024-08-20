@@ -19,6 +19,9 @@
   background-color: inherit;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
 
 .work-together-btn:hover {
   background-color: #E0373F;

@@ -1,20 +1,26 @@
 import axios from 'axios';
 function hideModal() {
   const modal = document.querySelector('.modal-window');
+  const bodyModal = document.querySelector('body');
 
   if (modal) {
     modal.style.display = 'none';
+    bodyModal.style.overflow = '';
     document.removeEventListener('click', handleClickOutside);
     document.removeEventListener('keydown', handleEscapeKey);
+    // document.body.classList.remove('no-scroll');
   }
 }
 hideModal();
 function showModal() {
   const modal = document.querySelector('.modal-window');
+  const bodyModal = document.querySelector('body');
   if (modal) {
     modal.style.display = 'block';
+    bodyModal.style.overflow = 'hidden';
     document.addEventListener('click', handleClickOutside);
     document.addEventListener('keydown', handleEscapeKey);
+    // document.body.classList.add('no-scroll');
   }
 }
 
