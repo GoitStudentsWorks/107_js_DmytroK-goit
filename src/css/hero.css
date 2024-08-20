@@ -5,9 +5,10 @@
 }
 
 .section-hero {
-  /* background-image: url(../img/Hero_1x.png); */
+  background-image: url(../img/Hero_1x.png);
   color: rgb(57, 30, 30);
   background-size: contain;
+  
 }
 
 .container-hero {
@@ -33,10 +34,11 @@
   text-align: left;
 }
 .hero_list {
-  position: absolute;
+  /* position: absolute; */
   bottom: 32px;
   right: 0;
   display: flex;
+  justify-content: end;
   gap: 4px;
 }
 
@@ -129,10 +131,11 @@
     width: 1376px;
     margin: 0;
   }
-  /* .section-hero{
+  .section-hero{
        
         background-image: url(../img/Hero_2x.png);
-    } */
+        background-repeat: no-repeat;
+    }
   .container-hero {
     width: 1184px;
   }
