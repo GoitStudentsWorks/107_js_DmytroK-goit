@@ -1,6 +1,6 @@
 import { getReviews } from './api';
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -29,9 +29,10 @@ async function showReviews() {
       ulElement.innerHTML = reviewsMarkup(reviews);
 
       const swiper = new Swiper('.swiper-review', {
-        // modules: [Navigation, Pagination],
-        slidesPerView: 1,
-        spaceBetween: 16,
+        modules: [Navigation],
+        slidesPerView: 'auto',
+
+        spaceBetween: 30,
         navigation: {
           nextEl: '.swiper-button-next-review',
           prevEl: '.swiper-button-prev-review',
@@ -47,25 +48,6 @@ async function showReviews() {
         grabCursor: true,
         loop: false,
         speed: 600,
-        breakpoints: {
-          320: {
-            slidesPerView: 'auto',
-          },
-          768: {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-          },
-          1440: {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-          },
-        },
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   clickable: true,
-        //   type: 'bullets',
-        //   dynamicBullets: true,
-        // },
       });
 
       swiper.on('slideChange', () => updateNavigationButtons(swiper));
