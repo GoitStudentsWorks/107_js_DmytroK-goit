@@ -1,4 +1,5 @@
 /* Visually hidden for accessibility */
+
 .about-swiper-btn-prev {
   left: 10px; /* Відстань від лівого краю */
 }
@@ -300,7 +301,7 @@
   justify-content: flex-start;
   margin: 0;
   background: none;
-  width: 100%;
+  width: 260px;
   height: 130px;
   overflow: hidden;
 }
@@ -309,12 +310,32 @@
   .about-skills.swiper {
     height: 200px;
   }
+  .about-skills.swiper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    background: none;
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .about-skills.swiper {
     padding-right: 32px;
     padding-left: 32px;
+  }
+  .about-skills.swiper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    background: none;
+    width: 1200px;
+    height: 200px;
+    overflow: hidden;
   }
 }
 

@@ -5,11 +5,9 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 // Initialize Swiper
-const swiperCont = document.querySelector('.about-skills');
-
-const swiper = new Swiper(swiperCont, {
+const swiper = new Swiper('.about-skills', {
   navigation: {
-    nextEl: '.about-swiper-btn',
+    nextEl: '.about-swiper-btn', // Assign button as next slide trigger
   },
   keyboard: {
     enabled: true,
@@ -24,16 +22,13 @@ const swiper = new Swiper(swiperCont, {
   slideClass: 'about-skills-item',
   slideActiveClass: 'about-skills-item-accent',
   wrapperClass: 'about-skills-list',
-  slidesPerView: 2, // Для екранів від 320px
-  spaceBetween: 1, // Геп між елементами
-  loop: true, // Циклічне прокручування
+  slidesPerView: 2,
+  spaceBetween: 1,
+  loop: true,
   loopedSlides: 6,
-  navigation: {
-    nextEl: '.about-swiper-btn',
-  },
   breakpoints: {
     768: {
-      slidesPerView: 3, // Для екранів від 768px
+      slidesPerView: 3,
     },
     1440: {
       slidesPerView: 6,
