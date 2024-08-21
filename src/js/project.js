@@ -15,4 +15,5 @@ var swiper = new Swiper(".project-swiper", {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
+	speed: 900,
 });
