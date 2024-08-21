@@ -25,6 +25,7 @@ const swiper = new Swiper(swiperCont, {
   wrapperClass: 'about-skills-list',
   loop: true,
   width: 130,
+  loopAdditionalSlides: 4,
   slidesPerView: 'auto',
   slidesPerGroup: 1,
 
