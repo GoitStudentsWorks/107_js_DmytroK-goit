@@ -29,10 +29,9 @@ async function showReviews() {
       ulElement.innerHTML = reviewsMarkup(reviews);
 
       const swiper = new Swiper('.swiper-review', {
-        modules: [Navigation],
+        // modules: [Navigation],
         slidesPerView: 'auto',
-
-        spaceBetween: 30,
+        spaceBetween: 16,
         navigation: {
           nextEl: '.swiper-button-next-review',
           prevEl: '.swiper-button-prev-review',
