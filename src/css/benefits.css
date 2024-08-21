@@ -79,6 +79,33 @@
   border: 1px solid #fafafa;
 }
 
+.go-back-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--text);
+  border: none;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.go-back-btn:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.scroll-hidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .benefits-title {
     font-size: 16px;

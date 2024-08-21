@@ -31,6 +31,23 @@ async function showReviews() {
       const swiper = new Swiper('.swiper-review', {
         // modules: [Navigation],
         slidesPerView: 'auto',
+        breakpoints: {
+          // when window width is >= 320
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 768
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 1440
+          1440: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+          },
+        },
         spaceBetween: 16,
         navigation: {
           nextEl: '.swiper-button-next-review',
