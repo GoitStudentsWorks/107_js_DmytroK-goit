@@ -1,4 +1,4 @@
-const scrollUpBtn = document.querySelector('.scroll-up-btn');
+const scrollUpBtn = document.querySelector('.go-back-btn');
 scrollUpBtn.addEventListener('click', scrollToTop);
 
 async function scrollToTop() {
@@ -13,9 +13,9 @@ async function scrollToTop() {
 
 function showScrollToTopBtn() {
   if (window.scrollY > 1300) {
-    scrollUpBtn.classList.remove('scroll-up-btn-hidden');
+    scrollUpBtn.classList.remove('scroll-hidden');
   } else {
-    scrollUpBtn.classList.add('scroll-up-btn-hidden');
+    scrollUpBtn.classList.add('scroll-hidden');
   }
 }
 
