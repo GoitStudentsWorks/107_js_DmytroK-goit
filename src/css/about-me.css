@@ -309,6 +309,7 @@
 
 .about-skills-list {
   display: flex;
+  flex-direction: row-reverse;
   max-width: 260px;
   align-items: start;
   overflow: hidden;
