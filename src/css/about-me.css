@@ -53,13 +53,14 @@
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .about-text-section {
     padding: 64px 64px 436px 64px;
   }
-}
+} */
 
 .about-descr {
+  margin: 0;
   width: 279px;
   color: #fafafa;
   font-size: 24px;
@@ -116,7 +117,7 @@
 /* ----- Accordion container ----- */
 
 .about-accordion-container {
-  margin-bottom: 32px;
+  margin-bottom: 96px;
 }
 
 .about-ac.ac {

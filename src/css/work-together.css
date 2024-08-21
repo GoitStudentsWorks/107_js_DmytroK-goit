@@ -28,13 +28,13 @@
 }
 
 .work-together-btn:hover {
-  background-color: #E0373F;
+  background-color: #e0373f;
   transform: scale(1.05);
   font-size: 18px;
 }
 
 .work-together-btn:focus {
-  background-color: #E0373F;
+  background-color: #e0373f;
   font-size: 18px;
   transform: scale(1.05);
 }
@@ -68,12 +68,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 
-  .work-together-block {
+  /* .work-together-block {
     margin-top: 64px;
-  }
+  } */
 
   .work-together h2 {
     font-size: 40px;
@@ -92,7 +91,6 @@
   .work-together-header-cont {
     display: flex;
     padding-top: 32px;
-
   }
 
   .work-together-header-cont img {
@@ -127,7 +125,6 @@
     gap: 4px;
   }
 
-
   .work-together-adress li {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
@@ -160,9 +157,9 @@
     justify-content: center;
   }
 
-  .work-together-block {
+  /* .work-together-block {
     margin-top: 64px;
-  }
+  } */
 
   .work-together-header-cont img {
     margin-right: 8px;
@@ -185,7 +182,6 @@
   .work-together-header-cont {
     display: flex;
     padding-top: 32px;
-
   }
 
   .work-together-header-cont img {
@@ -249,9 +245,9 @@
     align-items: center; */
   }
 
-  .work-together-block {
+  /* .work-together-block {
     margin-top: 96px;
-  }
+  } */
 
   .work-together-header-cont {
     display: flex;
@@ -274,7 +270,6 @@
     margin: 0 auto;
     flex-direction: row;
     align-items: center;
-
   }
 
   .work-together-form input {
@@ -302,7 +297,6 @@
   .work-together-adress {
     padding-bottom: 169px;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -313,12 +307,9 @@
   }
 
   .container.work-together {
-    padding-left: 196px;
-    padding-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 196px;
   }
 
   .work-together-form {
@@ -330,15 +321,13 @@
     width: 390px;
     height: 44px;
   }
-
+  /* 
   .work-together-block {
     margin-top: 164px;
-  }
+  } */
 
   .work-together-header-cont {
     width: 542px;
     padding-top: 80px;
   }
-
-
 }

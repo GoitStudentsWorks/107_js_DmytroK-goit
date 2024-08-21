@@ -1,8 +1,9 @@
-.container .covers-container {
+/* .container .covers-container {
   margin-top: 64px;
-}
+} */
 
 .covers-visually-hidden {
+  /* position: absolute; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -18,7 +19,7 @@
 .covers-content {
   position: relative;
   overflow: hidden;
-  padding: 20px;
+  /* padding: 20px; */
   background-image: url(../img/covers-img/covers-background.webp),
     url(../img/covers-img/covers-background-2.webp);
   height: 508px;
@@ -68,9 +69,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container .covers-container {
+  /* .container .covers-container {
     margin-top: 96px;
-  }
+  } */
   .covers-content {
     height: 960px;
   }
@@ -80,8 +81,8 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .container .covers-container {
     margin-top: 164px;
   }
-}
+} */
