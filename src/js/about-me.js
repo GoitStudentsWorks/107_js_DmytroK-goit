@@ -24,10 +24,10 @@ const swiper = new Swiper(swiperCont, {
   slideActiveClass: 'about-skills-item-accent',
   wrapperClass: 'about-skills-list',
   loop: true,
-  width: 130,
-  loopAdditionalSlides: 4,
-  slidesPerView: 'auto',
-  slidesPerGroup: 1,
+  width: 6,
+  // loopAdditionalSlides: 4,
+  slidesPerView: 6,
+  // slidesPerGroup: 1,
 
   // breakpoints: {
   //   // when window width is >= 375px
