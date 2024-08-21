@@ -84,3 +84,12 @@ document.addEventListener('click', function (event) {
     hideMobileMenu();
   }
 });
+document.addEventListener('click', function (event) {
+  const mobMenuNavLinks = document.querySelectorAll('.mob-menu a');
+
+  mobMenuNavLinks.forEach(link => {
+    if (link === event.target) {
+      hideMobileMenu();
+    }
+  });
+});
