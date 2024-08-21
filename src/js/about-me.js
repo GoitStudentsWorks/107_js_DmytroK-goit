@@ -24,37 +24,22 @@ const swiper = new Swiper(swiperCont, {
   slideActiveClass: 'about-skills-item-accent',
   wrapperClass: 'about-skills-list',
   loop: true,
-  width: 6,
-  // loopAdditionalSlides: 4,
-  slidesPerView: 6,
-  // slidesPerGroup: 1,
-
-  // breakpoints: {
-  //   // when window width is >= 375px
-  //   375: {
-  //     slidesPerView: 2,
-  //     width: 260,
-  //   },
-  //   // when window width is >= 768px
-  //   768: {
-  //     slidesPerView: 3,
-  //     width: 600,
-  //   },
-  //   // when window width is >= 1440px
-  //   1440: {
-  //     slidesPerView: 'auto',
-  //     width: 200,
-  //   },
-  // },
-});
-
-const container = document.querySelector('.about-accordion-container');
-
-const accordion = new Accordion(container, {
-  openOnInit: [0],
-  showMultiple: false,
-  duration: 500,
-  elementClass: 'about-ac',
-  panelClass: 'about-ac-panel',
-  triggerClass: 'about-ac-btn',
+  with: 6,
+  breakpoints: {
+    // when window width is >= 375px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+      slideToClickedSlide: true,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1440px
+    1440: {
+      slidesPerView: 6, // Правильно вказуємо кількість слайдів
+      width: 6,
+    },
+  },
 });
