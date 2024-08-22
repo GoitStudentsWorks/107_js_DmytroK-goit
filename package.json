@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-js-group02/",
+    "build": "vite build --base=/107_js_DmytroK-goit/",
     "preview": "vite preview"
   },
   "devDependencies": {
