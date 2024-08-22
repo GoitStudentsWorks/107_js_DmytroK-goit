@@ -1,4 +1,4 @@
-document.querySelectorAll('.hero_social_media, .email, .work-together-items').forEach(item => {
+document.querySelectorAll('.hero_social_media, .email, .work-together-items, .order-link').forEach(item => {
     item.addEventListener('mouseover', () => {
       item.style.transform = 'translateY(-10px)';
       item.style.transition = 'transform 0.3s ease-in-out';
