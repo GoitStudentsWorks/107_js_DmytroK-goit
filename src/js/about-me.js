@@ -34,6 +34,8 @@ const swiper = new Swiper('.about-skills', {
     1440: {
       slidesPerView: 5,
       loopedSlides: 5,
+
+      spaceBetween: 25,
     },
   },
 });
