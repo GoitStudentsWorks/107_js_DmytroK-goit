@@ -56,7 +56,7 @@
 
     height: 100%;
     z-index: 99999;
-    background-image: url(../img/header1x.png);
+    background-image: url(../img/header-img/header1x.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px 16px 64px 0;
@@ -167,7 +167,7 @@
 
     height: 100%;
     z-index: 99999;
-    background-image: url(../img/header1x.png);
+    background-image: url(../img/header-img/header1x.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px 16px 64px 0;
@@ -316,7 +316,7 @@
   width: 370px;
   height: 100%;
   z-index: 99999;
-  background-image: url(../img/header1x.png);
+  background-image: url(../img/header-img/header1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 32px 16px 64px 0;
@@ -465,20 +465,36 @@
   .navi {
     position: absolute;
     color: #fafafa;
+    margin-top: 10px;
+    text-align: center;
   }
 
   .navigation {
     display: block;
+    text-align: center;
+    width: 64px;
   }
 
   .menu {
     transition: all 0.5s ease-in-out;
     color: #fafafa;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    
   }
 
   .menu:hover {
     cursor: pointer;
     text-decoration: underline;
+    color: rgb(234, 143, 147);
+  }
+  .nav-item{
+    padding-top: 6px;
+  }
+  .nav-item:hover,
+  .nav-item:focus
+  {
+    color: rgba(237, 59, 68, 1);
   }
 }
 
