@@ -115,6 +115,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-accordion-container {
+    margin-top: 96px;
+  }
   .about-image {
     width: 704px;
     height: 700px;
@@ -131,6 +134,7 @@
 
 /* Accordion container */
 .about-accordion-container {
+  margin-top: 64px;
   margin-bottom: 96px;
 }
 
@@ -261,7 +265,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .about-education-list>li:first-child {
+  .about-education-list > li:first-child {
     width: 369px;
   }
 
@@ -444,7 +448,6 @@
 
 /* Ensure the swiper buttons are visible on all screens */
 @media screen and (min-width: 1440px) {
-
   .about-skills .swiper-button-next,
   .about-skills .swiper-button-prev {
     display: block;

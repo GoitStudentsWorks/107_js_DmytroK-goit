@@ -7,12 +7,15 @@
   border: none;
   font-size: 16px;
   letter-spacing: -0.02em;
-  /* text-shadow: 0 4px 4px 0, rgba(0, 0, 0, 0.25); */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.work-together-block {
+  margin-top: 64px;
 }
 
 .work-together-form input:hover {
@@ -25,6 +28,12 @@
 
 .work-together-btn {
   transition: all 0.4s ease-in-out;
+}
+
+.footer-img {
+  border-radius: 14px;
+  width: 44px;
+  height: 44px;
 }
 
 .work-together-btn:hover {
@@ -42,6 +51,7 @@
 .work-together-adress {
   font-style: normal;
   transition: all 0.4s ease-in-out;
+  margin-bottom: 64px;
 }
 
 .work-together-adress li:hover {
@@ -51,6 +61,11 @@
 .work-together {
   display: block;
   justify-content: center;
+  background-image: url(/img/footer-img/work-together-mob.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .work-together-items:hover,
@@ -74,10 +89,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  /* .work-together-block {
-    margin-top: 64px;
-  } */
 
   .work-together h2 {
     font-size: 40px;
@@ -123,6 +134,7 @@
   .work-together-adress {
     padding-top: 64px;
     width: 100%;
+    margin-bottom: 64px;
   }
 
   .work-together-adress ul {
@@ -161,10 +173,6 @@
     display: block;
     justify-content: center;
   }
-
-  /* .work-together-block {
-    margin-top: 64px;
-  } */
 
   .work-together-header-cont img {
     margin-right: 8px;
@@ -245,14 +253,18 @@
     padding: 0px 32px;
     width: 703px;
     margin: 0 auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   }
 
-  /* .work-together-block {
-    margin-top: 96px;
-  } */
+  .work-together {
+    background-image: url(/img/footer-img/work-together-tab.png);
+    padding-top: 88px;
+    padding-bottom: 169px;
+  }
+
+  .footer-img {
+    width: 70px;
+    height: 70px;
+  }
 
   .work-together-header-cont {
     display: flex;
@@ -311,10 +323,16 @@
     margin: 0 auto;
   }
 
+  .work-together {
+    padding: 88px 201px 169px 196px;
+    background-image: url(/img/footer-img/work-together-desk.png);
+  }
+
   .container.work-together {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 88px 201px 169px 196px;
   }
 
   .work-together-form {
@@ -326,10 +344,6 @@
     width: 390px;
     height: 44px;
   }
-  /* 
-  .work-together-block {
-    margin-top: 164px;
-  } */
 
   .work-together-header-cont {
     width: 542px;
