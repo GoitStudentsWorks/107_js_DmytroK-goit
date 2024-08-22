@@ -24,7 +24,7 @@
 .project-container {
   width: 311px;
   height: 952px;
-  /* margin-top: 164px; */
+  margin-top: 64px;
 }
 
 .project-head {
@@ -234,7 +234,7 @@ li.project-slide {
   .project-container {
     width: 640px;
     height: 1379px;
-    /* margin-top: 96px; */
+    margin-top: 96px;
   }
 
   .project-container > .project-swiper {
