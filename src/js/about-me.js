@@ -23,15 +23,17 @@ const swiper = new Swiper('.about-skills', {
   slideActiveClass: 'about-skills-item-accent',
   wrapperClass: 'about-skills-list',
   slidesPerView: 2,
+  loopedSlides: 2,
   spaceBetween: 1,
   loop: true,
-  loopedSlides: 6,
   breakpoints: {
     768: {
       slidesPerView: 3,
+      // loopedSlides: 3,
     },
     1440: {
-      slidesPerView: 6,
+      slidesPerView: 5,
+      loopedSlides: 5,
     },
   },
 });
